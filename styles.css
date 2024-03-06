@@ -16,7 +16,7 @@
 
 .container {
     width: 100%;
-    min-height: 100vh;
+    min-height: 100svh;
     background: url(images/background.jpg);
     background-size: cover;
     padding: 10px;
@@ -189,12 +189,13 @@ ul li span:hover {
 
 .container footer {
     display: flex;
+    justify-content: center;
     position: sticky;
     top: 100%;
     color: #d6d6d6;
     font-family: "header-regular";
     font-weight: 600;
-    justify-content: center;
+    
 
 }
 
