@@ -1,0 +1,219 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:  'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "header-regular";
+    src: url(fonts/ClashDisplay-Regular.woff2) 
+    format("woff2");
+    font-weight: 400;
+}
+
+
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: url(images/background.jpg);
+    background-size: cover;
+    padding: 10px;
+}
+
+.main-header {
+    width: 100%;
+    height: 500px;
+    margin-top: 3px;
+    border-radius: 20px 20px 10px 10px;
+    background-color: #000000c2;
+    /* transition: all 0.3s ease-in-out; */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+/* 
+.main-header:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+} */
+
+.main-header h1 {
+    font-family: "header-regular";
+    color: #d6d6d6;
+    font-size: 40px;
+    padding: 20px;
+}
+.main-header h2 {
+    font-family: "header-regular";
+    color: #d6d6d6;
+    font-size: 35px;
+    padding: 0px 20px;
+}
+.main-header .img-banner {
+    /* border: 2px solid red; */
+    display: flex;
+    height: 350px;
+    align-items:center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.main-header .img-banner Strong {
+    font-size: 70px;
+    color: #d6d6d6;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    border-radius: 20px;
+    padding: 20px;
+}
+.main-header .img-banner Strong:hover {
+    font-size: 80px;
+    box-shadow: 20px 20px 20px rgba(191, 255, 174, 0.479);
+    background-color: rgba(191, 255, 174, 0.24);
+}
+
+
+
+
+.todo-app {
+    width: 100%;
+    max-width: 1900px;
+    min-height: 400px;
+    background: #0f0f0fcc;
+    margin: 15px auto 10px;
+    padding: 40px 30px 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+}
+.todo-app:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.todo-app h2 {
+    font-family: "header-regular";
+    color: #d6d6d6;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-size: 28px;
+
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #162414bd;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.row input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #9e9e9e;
+    font-weight: bold;
+    padding: 10px;
+}
+.row button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #1a4929;
+    color: #d6d6d6;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.row button:hover {
+    background: #215e34;
+}
+
+ul li {
+    color: #d6d6d6;
+    list-style: none;
+    font-size: 17px;
+    padding: 16px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(images/checked.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+ul li span:hover {
+    background: #f70000;
+    color: white;
+}
+
+.container strong {
+    display: flex;
+    color: #d6d6d6;
+    font-family: "header-regular";
+    justify-content: center;
+
+}
+
+
+/* ----- Custom Scroll Bar  ---- */
+
+::-webkit-scrollbar {
+    width: 20px;
+    
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #050F08;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #296b3e;
+    border: 4px solid #050F08;
+    border-radius: 6px;
+}
+/* ::-webkit-scrollbar-thumb:hover {
+    box-shadow: 0px 0px 20px rgba(191, 255, 174, 0.658);
+
+} */
