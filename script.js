@@ -1,7 +1,8 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
+const button = document.getElementById("btn");
 
-function addTask() {
+button.addEventListener("click", () => {
     if(inputBox.value === "") {
         alert("Please enter a task");   
     }
@@ -17,9 +18,9 @@ function addTask() {
         li.appendChild(span);  //Adds close button to each task
     }
     saveData();
-}
+});
 
-listContainer.addEventListener("click", function x(e) {
+listContainer.addEventListener("click", function(e) {
     if(e.target.tagName === "LI") {
         e.target.classList.toggle("checked");
         saveData();
