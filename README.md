@@ -8,3 +8,5 @@ This is a simple yet powerful Todo application built using HTML, CSS, and JavaSc
 - **Persistent Storage**: The application uses the browser's local storage to save tasks. This means your tasks won't disappear even if you reload the page!
 
 This project showcases the use of basic web technologies to build a functional, user-friendly application. Feel free to explore the code.
+
+https://iamsahdoon.github.io/Todo-App/
